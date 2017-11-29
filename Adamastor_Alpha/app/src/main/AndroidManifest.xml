@@ -1,10 +1,14 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
 
     package="hatefull8.adamastor_alpha">
 
     <uses-sdk
         android:minSdkVersion="18"
         android:targetSdkVersion="18" />
+
+    <uses-permission android:name="android.permission.PACKAGE_USAGE_STATS"
+        tools:ignore="ProtectedPermissions" />
 
     <application
         android:allowBackup="true"
@@ -39,6 +43,12 @@
             android:name="hatefull8.adamastor_alpha.NotificationListActivity"
             android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             android:permission="android.permission.BIND_NOTIFICATION_LISTENER_SERVICE"
+            >
+        </activity>
+
+        <activity
+            android:name="hatefull8.adamastor_alpha.UsageDataListActivity"
+            android:theme="@android:style/Theme.NoTitleBar.Fullscreen"
             >
         </activity>
 

@@ -23,5 +23,10 @@ public class HomeActivity extends Activity {
         startActivity(i);
     }
 
+    public void showStats(View v){
+        Intent i = new Intent(this, UsageDataListActivity.class);
+        startActivity(i);
+    }
+
 
 }
